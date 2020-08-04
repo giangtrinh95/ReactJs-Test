@@ -11,7 +11,6 @@ export default class Hooks extends Component {
       <div>
         Component: {check ? "Class Component:" : "Func Component"}
         <br />
-        <hr />
         <button
           onClick={() => {
             this.setState({ check: !check });
@@ -19,6 +18,7 @@ export default class Hooks extends Component {
         >
           Check
         </button>
+        <hr />
         {check ? <ClassComponent /> : <FncComponent />}
       </div>
     );
